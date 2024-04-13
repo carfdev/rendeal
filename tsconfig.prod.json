@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "/home/work/Proyectos/adilosam",
+    "baseUrl": "/opt/build/repo",
     "paths": {
       "@/*": [
         "./src/*"
