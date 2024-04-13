@@ -1,13 +1,9 @@
-<div style="text-align: center;">
-
 # Web RenDeal created with Astro :rocket:
 
 ![GitHub License](https://img.shields.io/github/license/carfdev/rendeal)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/carfdev/rendeal)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/carfdev/rendeal/main)
 ![GitHub repo size](https://img.shields.io/github/repo-size/carfdev/rendeal)
-
-</div>
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
