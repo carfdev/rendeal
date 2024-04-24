@@ -1,0 +1,38 @@
+---
+
+---
+
+<nav class="bg-secondary h-20 p-4">
+  <div class="h-full flex justify-between items-center">
+    <a href="/" class="h-full">
+      <img class="h-full" src="/img/logo.svg" alt="RenDeal" />
+    </a>
+    <button type="button" id="menu-button" class="size-10 bg-secondary-light flex justify-center items-center rounded-full md:hidden">
+      <span class="sr-only">Open main menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-primary-dark">
+        <path id ="svg-path" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<script>
+  /* Script for the hamburger menu */
+  const getById = (id: string) => document.getElementById(id) // Get an element by its ID
+
+  const menuButton = getById('menu-button') as HTMLButtonElement // Get the button element
+  const pathMneu = "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" // The path for the button
+  const pathClose = 'M6 18L18 6M6 6l12 12' // The path for the button
+
+  let currentPath: string = pathMneu // Set the initial path
+
+  /* Toggles the path between the two values */
+  const togglePath = () => {  
+  const myPath: SVGPathElement | null = getById('svg-path') as SVGPathElement | null;
+  if (myPath) {
+    currentPath = (currentPath === pathMneu) ? pathClose : pathMneu; // Toggle between the two values
+    myPath.setAttribute('d', currentPath); // Set the new value for the "d" attribute
+  }
+}
+  menuButton.addEventListener('click', togglePath)
+</script>
