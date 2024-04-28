@@ -11,7 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "4.6.1"
+    "astro": "4.6.1",
+    "flowbite": "^2.3.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.43.1",
